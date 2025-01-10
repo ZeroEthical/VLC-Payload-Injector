@@ -9,6 +9,7 @@ Este script es una versión mejorada de un script original creado por Sabber Hos
 **Código Original:** El código base de este script es una adaptación del trabajo original de Sabber Hossen. Los derechos de autor del código original pertenecen a Sabber Hossen.
 
 **Link de referencia:** *https://github.com/r00tsabber/VidExploit*
+
 **Modificaciones:** Esta versión del script incluye las siguientes modificaciones y funcionalidades adicionales:
 
 *   **Técnicas Anti-Análisis:** Se han implementado comprobaciones básicas para detectar entornos virtualizados y herramientas de depuración, con el fin de dificultar el análisis del script.
